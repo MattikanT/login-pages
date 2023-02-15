@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link
+  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+  <title>Form Validation</title>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="content">
+      <!--.logo+.image+.text + tab -->
+      <div class="logo">
+        <img src="https://fundacja2act.org/wp-content/uploads/2020/02/sample-logo-white.png" alt="" width="30%" >
+      </div>
+      <div class="image"></div>
+      <div class="text">
+        Start for free & get <br> attractive offer today!
+      </div>
+    </div>
+    
+    <form action="" id="form">
+      <div class="social">
+        <div class="title">
+        Get Started
+      </div>
+      <div class="question">
+          Already Have an Account? <br>
+        <span>Sign In</span>
+      </div>
+      <div class="btn">
+        <a  id="a-1" href="https://accounts.google.com/signin/v2/signinchooser?continue=https%3A%2F%2Fmyaccount.google.com%2Fdeleteaccount&service=accountsettings&osid=1&rart=ANgoxcflKHse4ox-iEo24jbYQH0AmZIQ6WS7gUfWdwdqeF8NPVpwgsVzKMih-B-_MfdXUbncL3yADxtTBN-krXkk8tnVr3n_Lw&flowName=GlifWebSignIn&TL=AC7eWV3Q8QzlVpJwC25cW5D2DZeKvTNGfivQe4zJ13XFzEyKX_pyy4j9qvM2CV91&cid=1&flowEntry=ServiceLogin" target="_blank">
+          <div class="btn-1">
+
+            <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/google-icon-logo.png" alt="" width="30px">
+              Sign Up  
+           </div> 
+          </a>
+        
+          <a id="a-2" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=554681589018843&kid_directed_site=0&app_id=554681589018843&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fscope%3Demail%26state%3DWZF30ygzW9YqH9RYaKA88vzFKgOrTLvh%26redirect_uri%3Dhttps%253A%252F%252Fwww.cmo.com.au%252Fsocial%252Fcomplete%252Ffacebook%252F%26client_id%3D554681589018843%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D764aab3c-a76d-4b9c-bc64-b405b13b454f%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.cmo.com.au%2Fsocial%2Fcomplete%2Ffacebook%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DWZF30ygzW9YqH9RYaKA88vzFKgOrTLvh%23_%3D_&display=page&locale=en_GB&pl_dbl=0" target="_blank">
+           <div class="btn-2">
+              <i class="fab fa-facebook fa-lg facebook" ></i>
+              Sign Up
+            </div>
+           </a>
+        </div>
+        
+        <div class="or">Or</div>
+      </div> <!--div.social+tab-->
+      
+      <!--    user name Input here    -->
+      <div>
+        <label for="username">User Name</label>
+        <i class="fas fa-user"></i>
+        <input type="text" name="username" id="username" placeholder="John Lee">
+        <i class="fas fa-exclamation-circle failure-icon" ></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+      <!--    Email Input here    -->
+      <div>
+        <label for="email">Email</label>
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" id="email" placeholder="abcd@gmail.com">
+        <i class="fas fa-exclamation-circle failure-icon" ></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+      <!--    Password name Input here    -->
+      <div>
+        <label for="password">Password</label>
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" id="password" placeholder="Password here">
+        <i class="fas fa-exclamation-circle failure-icon" ></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+      <button type="submit" id="submit" onclick="myFunction()" >Submit</button>
+      
+    </form>
+  </div>
+</body>
+</html>
